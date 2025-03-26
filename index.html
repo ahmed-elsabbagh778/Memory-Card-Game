@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select Level</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <div id="levels">
+  <h1 id="level-title">Select Difficulty</h1>
+  <button class="btn" onclick="startLevel('easy')">Easy</button>
+  <button class="btn" onclick="startLevel('medium')">Medium</button>
+  <button class="btn" onclick="startLevel('hard')">Hard</button>
+  </div>
+
+  <script>
+    function startLevel(level) {
+      localStorage.setItem('selectedLevel', level);
+      window.location.href = 'game.html';
+    }
+  </script>
+</body>
+</html>
