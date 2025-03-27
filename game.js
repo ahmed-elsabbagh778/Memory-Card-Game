@@ -130,8 +130,17 @@ function disableCards(){
     clearInterval(timeInterval);
 
     setTimeout(() => {
+      const highScoreKey = `highestScore_${currentLevel}`;
+      const storedHighScore = parseInt(localStorage.getItem(highScoreKey)) || 0;
+
       updateHighScore(score);
-      alert(`Game Over! \nMoves: ${moves}\nTimer: ${timer}\nScore: ${score}`);
+
+      if (score > storedHighScore) {
+        localStorage.setItem(highScoreKey, score);
+        alert(`New High Score! \nMoves: ${moves}\nTimer: ${timer}\nScore: ${score}`);
+      } else {
+        alert(`Game Over!\nMoves: ${moves}\nTimer: ${timer}\nScore: ${score}`);
+      }
     }, 100);
   
   }
