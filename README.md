@@ -27,8 +27,12 @@ The Memory card Game is a fun and interactive game where players flip cards to f
    ```
    git clone https://github.com/ahmed-elsabbagh778/Memory-Card-Game.git
    ```
-2. Open `index.html` in any modern web browser.
-3. Start playing and have fun!
+   Or run live using:
+   ```
+   https://ahmed-elsabbagh778.github.io/Memory-Card-Game/
+   ```
+3. Open `index.html` in any modern web browser.
+4. Start playing and have fun!
 
 ## Future Enhancements
 - Implement a leaderboard
