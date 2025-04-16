@@ -18,7 +18,6 @@ function startGame(level){
   document.getElementById("score").textContent = score;  
   document.getElementById('timer').textContent = 0;
   document.getElementById('moves').textContent = 0;
-  document.getElementById('score').textContent = 0;
   
   let size;
   if(level === 'easy') size = 4;
